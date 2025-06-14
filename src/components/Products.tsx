@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { ChevronRight } from 'lucide-react';
 
+import cupsImage from '../assets/artworks/cups.webp';
+import bowlsImage from '../assets/artworks/bowls.webp';
+import specialistImage from '../assets/artworks/specialist.webp';
+
 const Products: React.FC = () => {
   const [activeTab, setActiveTab] = useState('events');
   
@@ -14,19 +18,19 @@ const Products: React.FC = () => {
       {
         name: 'Reusable Cups',
         description: 'Durable, branded cups for festivals, concerts, and corporate events, reducing single-use plastic waste.',
-        image: 'src/assets/artworks/cups.webp', // Example image
+        image: cupsImage,
         features: ['Stackable design', 'Food-grade materials', 'Dishwasher safe', 'BPA-free materials']
       },
       {
         name: 'Reusable Bowls',
         description: 'Stylish and sturdy reusable bowls for food vendors at events.',
-        image: 'src/assets/artworks/bowls.webp', // Example image
+        image: bowlsImage,
         features: ['Stackable design', 'Food-grade materials', 'Dishwasher safe', 'BPA-free materials']
       },
       {
         name: 'Ecocrew Event Specialist',
         description: 'On-site support and management for reusable systems at your event, ensuring smooth operation and maximum impact.',
-        image: 'src/assets/artworks/specialist.webp', // Example image
+        image: specialistImage,
         features: ['Collection system setup', 'Staff training', 'Impact reporting', 'Attendee engagement']
       }
     ],

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Package2, Recycle, Leaf } from 'lucide-react';
+import heroImage from '../assets/artworks/ecocrew.jpg';
 
 const Hero: React.FC = () => {
   return (
@@ -54,7 +55,7 @@ const Hero: React.FC = () => {
           <div className="lg:w-1/2 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl max-w-md mx-auto">
               <img 
-                src="src/assets/artworks/ecocrew.jpg" 
+                src={heroImage}
                 alt="EcoCrew reusable packaging solutions" 
                 className="w-full h-80 object-cover rounded-2xl"
               />

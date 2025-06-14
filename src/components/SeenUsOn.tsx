@@ -1,34 +1,42 @@
 import React, { useState } from 'react';
 
+import evrmLogo from '../assets/media-logo/evrm.webp';
+import pearIsHungryLogo from '../assets/media-logo/pear_is_hungry.webp';
+import kongGreenGreenLogo from '../assets/media-logo/Konggreengreen.webp';
+import goGreenGirlLogo from '../assets/media-logo/gogreengirl.webp';
+import gizLogo from '../assets/media-logo/giz.webp';
+import smeThailandLogo from '../assets/media-logo/smeThailand.webp';
+import tnnEarthLogo from '../assets/media-logo/tnnEarth.webp';
+
 const SeenUsOn: React.FC = () => {
   const logos = [
     {
       name: "Environtman",
-      logo: "src/assets/media-logo/evrm.webp"
+      logo: evrmLogo
     },
     {
       name: "Pear is hungry",
-      logo: "src/assets/media-logo/pear_is_hungry.webp"
+      logo: pearIsHungryLogo
     },
     {
       name: "Kong Green Green",
-      logo: "src/assets/media-logo/Konggreengreen.webp"
+      logo: kongGreenGreenLogo
     },
     {
       name: "Go Green Girl",
-      logo: "src/assets/media-logo/gogreengirl.webp"
+      logo: goGreenGirlLogo
     },
     {
       name: "GIZ",
-      logo: "src/assets/media-logo/giz.webp"
+      logo: gizLogo
     },
     {
       name: "SME Thailand",
-      logo: "src/assets/media-logo/smeThailand.webp"
+      logo: smeThailandLogo
     },
     {
       name: "TNN Earth",
-      logo: "src/assets/media-logo/tnnEarth.webp"
+      logo: tnnEarthLogo
     }
   ];
 
