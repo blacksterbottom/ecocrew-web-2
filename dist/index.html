@@ -9,10 +9,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Cookie Consent by Osano -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script>
+      // Function to load Google Analytics
+      function loadGA() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-LWB25Y6CV6";
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LWB25Y6CV6');
+        console.log("GA loaded after consent");
+      }
+
+      window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#000"
+            },
+            "button": {
+              "background": "#f1d600"
+            }
+          },
+          "theme": "classic", // or "edgeless", "classic"
+          "type": "opt-in", // Can be 'opt-in', 'opt-out', 'info'
+          "content": {
+            "message": "This website uses cookies to ensure you get the best experience on our website.",
+            "dismiss": "Got it!",
+            "link": "Learn more",
+            "href": "/privacy-policy" // Link to your privacy policy page
+          },
+          onStatusChange: function(status, chosenBefore) {
+            var type = this.options.type;
+            var didConsent = this.hasConsented();
+            if (type == 'opt-in' && didConsent) {
+              // enable cookies
+              loadGA();
+            }
+          }
+        })
+      });
+    </script>
     <script type="module" crossorigin src="/assets/index-uupWQgDj.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-DT2HcLjQ.css">
   </head>
   <body>
     <div id="root"></div>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
   </body>
 </html>
