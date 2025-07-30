@@ -94,7 +94,7 @@ const PlasticImpactCalculator = () => {
                             <p className="text-2xl font-bold mb-2">
                                 {Number(attendees * 7 * days).toLocaleString()} Pieces
                             </p>
-                            <p className="text-white text-sm mb-6">Based on an average of 5 pieces per attendee per day.</p>
+                            <p className="text-white text-sm mb-6">Based on an average of 7 pieces per attendee per day.</p>
                             <h3 className="text-xl font-bold mb-4">Estimated Carbon Impact</h3>
                             <p className="text-2xl font-bold mb-2">
                                 {carbonImpact.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} kg of CO<sub>2</sub>
