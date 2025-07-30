@@ -37,12 +37,12 @@ const PlasticImpactCalculator = () => {
         <section className="section bg-white">
             <div className="container-custom">
                 <div className="text-center mb-8">
-                    <h2 className="section-title">Plastic Waste & Carbon Impact Calculator</h2>
+                    <h2 className="section-title">Environmental impact without Ecocrew</h2>
                     <p className="section-subtitle">
                         Estimate the environmental impact of your event based on the number of attendees and event days.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 px-20">
                     <div className="bg-white rounded-2xl shadow-lg p-8 order-2 lg:order-1 mb-8">
                         <form className="space-y-6">
                             <div>
@@ -69,6 +69,22 @@ const PlasticImpactCalculator = () => {
                                     className="w-full bg-gray-50 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500 px-2"
                                 />
                                 <p className="mt-2 text-gray-700">Event duration: <span className="font-bold">{days}</span> day(s)</p>
+                            </div>
+                            <div>
+                                <label htmlFor="eventType" className="block text-sm font-medium text-gray-700 mb-1">Event Type</label>
+                                <select
+                                    id="eventType"
+                                    className="w-full bg-gray-50 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500 px-2"
+                                >
+                                    <option value="">Select event type</option>
+                                    <option value="conference">Conference</option>
+                                    <option value="festival">Festival</option>
+                                    <option value="workshop">Workshop</option>
+                                    <option value="seminar">Seminar</option>
+                                    <option value="party">Party</option>
+                                    <option value="marathon">Marathon</option>
+                                    <option value="other">Other</option>
+                                </select>
                             </div>
                         </form>
                     </div>
