@@ -6,6 +6,7 @@ import HowItWorks from './components/HowItWorks';
 import Benefits from './components/Benefits';
 import Products from './components/Products';
 // import Testimonials from './components/Testimonials';
+import PlasticImpactCalculator from './components/PlasticImpactCalculator';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -19,6 +20,7 @@ function App() {
       <Benefits />
       <Products />
       {/* <Testimonials /> */}
+      <PlasticImpactCalculator/>
       <Contact />
       <Footer />
     </div>
