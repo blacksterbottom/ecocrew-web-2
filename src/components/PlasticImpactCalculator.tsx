@@ -92,7 +92,7 @@ const PlasticImpactCalculator = () => {
                         <div className="bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl shadow-lg p-8 text-white mb-8">
                             <h3 className="text-xl font-bold mb-4">Estimated single-use plastic waste</h3>
                             <p className="text-2xl font-bold mb-2">
-                                {Number(attendees * 5 * days).toLocaleString()} Pieces
+                                {Number(attendees * 7 * days).toLocaleString()} Pieces
                             </p>
                             <p className="text-white text-sm mb-6">Based on an average of 5 pieces per attendee per day.</p>
                             <h3 className="text-xl font-bold mb-4">Estimated Carbon Impact</h3>
