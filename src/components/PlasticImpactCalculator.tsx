@@ -28,7 +28,7 @@ const PlasticImpactCalculator = () => {
     const calculateCarbonImpact = (attendeeCount: number, eventDays: number) => {
         // 1 attendee generates 7 pieces per day, 1 piece = 0.143 kg plastic, 1 kg plastic = 2 kg CO2
         const pieces = attendeeCount * 7 * eventDays;
-        const plasticWaste = pieces * 0.2;
+        const plasticWaste = pieces * 0.025;
         const impact = plasticWaste * 2;
         setCarbonImpact(impact);
     };
@@ -70,7 +70,7 @@ const PlasticImpactCalculator = () => {
                                 />
                                 <p className="mt-2 text-gray-700">Event duration: <span className="font-bold">{days}</span> day(s)</p>
                             </div>
-                            <div>
+                            {/* <div>
                                 <label htmlFor="eventType" className="block text-sm font-medium text-gray-700 mb-1">Event Type</label>
                                 <select
                                     id="eventType"
@@ -85,7 +85,7 @@ const PlasticImpactCalculator = () => {
                                     <option value="marathon">Marathon</option>
                                     <option value="other">Other</option>
                                 </select>
-                            </div>
+                            </div> */}
                         </form>
                     </div>
                     <div className="order-1 lg:order-2">
